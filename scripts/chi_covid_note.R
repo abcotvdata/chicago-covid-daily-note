@@ -70,14 +70,21 @@ print(dosesCon)
 avgCon <- paste("The seven-day daily administration average is at",TodayAvg,"(compared to",ydayAvg,"yesterday).")
 print(avgCon)
 
-signoff <- "Jonathan Fagg
-Data Journalist
-ABC7 Chicago"
+signoff <- "Jonathan Fagg, Data Journalist, ABC7 Chicago"
 
-autoNote <- paste("As of: ",ILcases$testDate[1],"Daily COVID Stats:","Statewide, IDPH report —",ILCaseCon,ILDeathCon,ILHospCon,
-                  "For Chicago, IDPH report—",ChiCCon,ChiDCon,
-                  "Daily Vaccination Stats:", FVCon, dosesCon, avgCon, signoff,
-                  sep="     ")
+autoNote <- as.character(paste("As of ",ILcases$testDate[1],"Daily COVID Stats:","Statewide, IDPH report —",
+                  ILCaseCon,
+                  ILDeathCon,
+                  ILHospCon,
+                  "For Chicago, IDPH report—",
+                  ChiCCon,
+                  ChiDCon,
+                  "Daily Vaccination Stats:",
+                  FVCon, 
+                  dosesCon, 
+                  avgCon, 
+                  signoff))
 print(autoNote)
 
 write_file(autoNote,"note.txt")
+
