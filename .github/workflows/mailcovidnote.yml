@@ -16,11 +16,11 @@ jobs:
       - name: Set up pandoc for Rmd docs
         uses: r-lib/actions/setup-pandoc@v2
       - name: Install dependencies and packages
-        run: Rscript -e 'install.packages(c("stringr","readr","dplyr","sf","leaflet","htmlwidgets","leaflet.providers","leaflet.extras"))'
+        run: Rscript -e 'install.packages(c("readr","dplyr","lubridate"))'
       - name: Gather data and save as text file
-        run: Rscript scripts/fires_scrape_build.R
+        run: Rscript scripts/chi_covid_note.R
       - name: Commit results
         run: |
           git add -A
-          git commit -m 'New fires data. Maps updated!' || echo "No changes"
+          git commit -m 'New COVID note saved' || echo "No changes"
           git push origin || echo "No changes to commit"
