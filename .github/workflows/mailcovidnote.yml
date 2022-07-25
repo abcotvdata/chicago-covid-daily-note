@@ -32,7 +32,7 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: Daily WLS COVID Note
-          to: john.l.kelly@disney.com,jkelly3rd@gmail.com
+          to: john.l.kelly@disney.com,jkelly3rd@gmail.com,jonathan.p.fagg@abc.com
           from: ABC OTV Data Team #<abcotvdatateam@gmail.com>
           secure: true
           # body: Words
