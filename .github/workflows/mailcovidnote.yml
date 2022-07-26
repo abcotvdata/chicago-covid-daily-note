@@ -16,7 +16,7 @@ jobs:
 #      - name: Set up pandoc for Rmd docs
 #        uses: r-lib/actions/setup-pandoc@v2
       - name: Install dependencies and packages
-        run: Rscript -e 'install.packages(c("readr","dplyr","lubridate"))'
+        run: Rscript -e 'install.packages(c("readr","dplyr","lubridate","htmlwidgets"))'
       - name: Gather data and save as text file
         run: Rscript scripts/chi_covid_note.R
       - name: Commit results
