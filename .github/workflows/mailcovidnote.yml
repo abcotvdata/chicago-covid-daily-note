@@ -37,7 +37,7 @@ jobs:
           secure: true
           # body: Words
           # Optional HTML body read from file:
-          html_body: file://note.txt
+          html_body: file://covidnote.html
           # Optional carbon copy recipients:
           cc: john.l.kelly@abc.com
           convert_markdown: true
