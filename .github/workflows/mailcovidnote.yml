@@ -13,8 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: r-lib/actions/setup-r@v2
-#      - name: Set up pandoc for Rmd docs
-#        uses: r-lib/actions/setup-pandoc@v2
       - name: Install dependencies and packages
         run: Rscript -e 'install.packages(c("readr","dplyr","lubridate","htmlwidgets"))'
       - name: Gather data and save as text file
@@ -31,8 +29,8 @@ jobs:
           server_port: 465
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
-          subject: Daily WLS COVID Note
-          to: john.l.kelly@disney.com,jkelly3rd@gmail.com,jonathan.p.fagg@abc.com
+          subject: Daily COVID Note for WLS
+          to: john.l.kelly@disney.com,ross.e.weidner@abc.com,jonathan.p.fagg@abc.com
           from: ABC OTV Data Team # <abcotvdatateam@gmail.com>
           secure: true
           # body: Words

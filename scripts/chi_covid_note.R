@@ -71,7 +71,7 @@ print(avgCon)
 
 signoff <- "- Jonathan Fagg, Data Journalist, ABC7 Chicago"
 
-as_of_date <- paste(ILcases$testDate[1])
+as_of_date <- paste(as.character(as.POSIXct(ILcases$testDate[1]), format = "%b %d, %Y"))
 
 covidnote <- paste(sep = "</br>",
                    paste("<b>Daily COVID Stats"),
