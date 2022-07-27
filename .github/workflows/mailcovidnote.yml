@@ -30,12 +30,12 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: Daily COVID Note for WLS
-          to: jkelly3rd@gmail.com
+          to: ABCOTV.DL-Data.Journalists@abc.com, jkelly3rd@gmail.com
           from: ABC OTV Data Team # <abcotvdatateam@gmail.com>
           secure: true
           # body: Words
           # Optional HTML body read from file:
           html_body: file://covidnote.html
           # Optional carbon copy recipients:
-          cc: john.l.kelly@abc.com
+          # cc: john.l.kelly@abc.com
           convert_markdown: true
