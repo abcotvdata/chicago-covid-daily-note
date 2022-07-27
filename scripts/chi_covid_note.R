@@ -69,7 +69,11 @@ print(dosesCon)
 avgCon <- paste("The seven-day daily administration average is at",TodayAvg,"(compared to",ydayAvg,"yesterday).")
 print(avgCon)
 
+<<<<<<< HEAD
 signoff <- "- ABC OTV Data Team"
+=======
+signoff <- "- John Kelly, ABC OTV Data Team"
+>>>>>>> 4dcdb8e80dd32c3cee581fe5196917c082de202e
 
 as_of_date <- paste(as.character(as.POSIXct(ILcases$testDate[1]), format = "%b %d, %Y"))
 
