@@ -74,8 +74,7 @@ signoff <- "- Jonathan Fagg, Data Journalist, ABC7 Chicago"
 as_of_date <- paste(as.character(as.POSIXct(ILcases$testDate[1]), format = "%b %d, %Y"))
 
 covidnote <- paste(sep = "</br>",
-                   "<b>Daily COVID Stats",
-                   paste("As of ",as_of_date,"</b>"),
+                   paste("<b>Daily COVID Stats as of ",as_of_date,"</b>"),
                    paste(" "),
                    paste("<b>Statewide, IDPH report: </b>"),
                    ILCaseCon,
@@ -93,7 +92,7 @@ covidnote <- paste(sep = "</br>",
                    paste(" "),
                    signoff,
                    paste(" "),
-                   paste("* Important note: this data is provisional, and may include revisions up and down. Remember that weekend and holiday figures can sometimes be inconsistent because of reporting irregularities on days government offices are not open. If you have questions, reach out to John Kelly at john.l.kelly@abc.com."),    
+                   paste("Important note: this data is provisional, and may include revisions up and down. Remember that weekend and holiday figures can sometimes be inconsistent because of reporting irregularities on days government offices are not open. If you have questions, reach out to John Kelly at john.l.kelly@abc.com.")
 )
 
 write_file(covidnote,"covidnote.html")
