@@ -30,7 +30,7 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: Daily COVID Note for WLS
-          to: john.l.kelly@disney.com,ABCOTV.DL-Data.Journalists@abc.com
+          to: ABCOTV.DL-Data.Journalists@abc.com
 #          to: john.l.kelly@disney.com,#WLSTVDLNewswritersandProducers@abc.com,#WLSTVDLNewsManagers@abc.com,#wls-tvweboperations@abc.com,#WLSTVDLNewsReportersandAnchors@abc.com
           from: ABC OTV Data Team # <abcotvdatateam@gmail.com>
           secure: true
@@ -38,7 +38,7 @@ jobs:
           # Optional HTML body read from file:
           html_body: file://covidnote.html
           # Optional carbon copy recipients:
-          cc: john.l.kelly@abc.com
+          cc: jkelly3rd@gmail.com
           # Optional recipient of the email response:
           reply_to: john.l.kelly@abc.com
           convert_markdown: true
