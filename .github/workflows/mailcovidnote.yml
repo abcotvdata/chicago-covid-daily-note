@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '15 18 * * *'
+    - cron: '13 18 * * *'
       # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -30,12 +30,14 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: Daily COVID Note for WLS
-          to: ABCOTV.DL-Data.Journalists@abc.com, jkelly3rd@gmail.com
+          to: john.l.kelly@abc.com
           from: ABC OTV Data Team # <abcotvdatateam@gmail.com>
           secure: true
           # body: Words
           # Optional HTML body read from file:
           html_body: file://covidnote.html
           # Optional carbon copy recipients:
-          # cc: john.l.kelly@abc.com
+          cc: jkelly3rd@gmail.com
+          # Optional recipient of the email response:
+          reply_to: john.l.kelly@abc.com
           convert_markdown: true
