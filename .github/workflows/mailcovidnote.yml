@@ -37,7 +37,7 @@ jobs:
           # Optional HTML body read from file:
           html_body: file://covidnote.html
           # Optional carbon copy recipients:
-          cc: jkelly3rd@gmail.com
+          cc: john.l.kelly@abc.com, jkelly3rd@gmail.com
           # Optional recipient of the email response:
           # reply_to: john.l.kelly@abc.com
           convert_markdown: true
