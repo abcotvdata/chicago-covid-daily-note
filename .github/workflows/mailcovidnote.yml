@@ -30,7 +30,7 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: Daily COVID Note for WLS
-          to: ABCOTV.DL-Data.Journalists@abc.com
+          to: Adriana.M.Cortez@abc.com,Alexandria.L.Jud@abc.com,Colin.D.Evans@abc.com,David.F.Fell@abc.com,Douglas.Whitmire@abc.com,Fiesha.Y.Burge@abc.com,Jennifer.C.Hoppenstedt@abc.com,Jennifer.L.Graves@abc.com,John.L.Silvey@abc.com,Neil.J.Woulfe@abc.com,Nneka.I.Nwosu@abc.com,Patrice.M.Folke@abc.com,Richard.E.Hillengas@abc.com,Virginia.R.Matos@abc.com,Wilson.Toy@abc.com,virginia.r.matos@abc.com,christine.m.tressel@abc.com,barbara.a.markoff@abc.com,arlene.p.erves@abc.com,john.a.klein@abc.com,christopher.j.parrish@abc.com,carleen.r.mosbach@abc.com,timothy.x.sallinger@abc.com,kristin.l.hoogenboom@abc.com,sara.m.tenenbaum@abc.com,ross.e.weidner@abc.com,jonathan.p.fagg@abc.com,Poinesha.A.Barnes@abc.com
           from: ABC OTV Data Team # <abcotvdatateam@gmail.com>
           secure: true
           # body: Words
