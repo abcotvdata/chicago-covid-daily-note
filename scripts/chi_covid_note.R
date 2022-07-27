@@ -69,7 +69,7 @@ print(dosesCon)
 avgCon <- paste("The seven-day daily administration average is at",TodayAvg,"(compared to",ydayAvg,"yesterday).")
 print(avgCon)
 
-signoff <- "- Jonathan Fagg, Data Journalist, ABC7 Chicago"
+signoff <- "- ABC OTV Data Team"
 
 as_of_date <- paste(as.character(as.POSIXct(ILcases$testDate[1]), format = "%b %d, %Y"))
 
@@ -92,7 +92,7 @@ covidnote <- paste(sep = "</br>",
                    paste(" "),
                    signoff,
                    paste(" "),
-                   paste("Important note: this data is provisional, and may include revisions up and down. Remember that weekend and holiday figures can sometimes be inconsistent because of reporting irregularities on days government offices are not open. If you have questions, reach out to John Kelly at john.l.kelly@abc.com. Also, let John know if there are specific people who should be added to the recipient list.")
+                   paste("Important note: this data is provisional, and may include revisions up and down. Remember, weekend and holiday figures can sometimes be inconsistent because of reporting irregularities on days government offices are closed. If you have questions, reach out to John Kelly at john.l.kelly@abc.com. Also, let John know if there are specific people who should be added.")
 )
 
 write_file(covidnote,"covidnote.html")
