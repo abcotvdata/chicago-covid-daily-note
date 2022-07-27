@@ -38,6 +38,4 @@ jobs:
           html_body: file://covidnote.html
           # Optional carbon copy recipients:
           cc: john.l.kelly@abc.com
-          # Optional recipient of the email response:
-          reply_to: john.l.kelly@abc.com
           convert_markdown: true
