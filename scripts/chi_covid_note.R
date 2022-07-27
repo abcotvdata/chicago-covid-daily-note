@@ -91,9 +91,9 @@ covidnote <- paste(sep = "</br>",
                    dosesCon, 
                    avgCon, 
                    paste(" "),
-                   signoff
+                   signoff,
+                   paste(" "),
+                   paste("* Important note: this data is provisional, and may include revisions up and down. Remember that weekend and holiday figures can sometimes be inconsistent because of reporting irregularities on days government offices are not open. If you have questions, reach out to John Kelly at john.l.kelly@abc.com."),    
 )
-
-# prettyNum(xxxxxx,big.mark=",")),
 
 write_file(covidnote,"covidnote.html")
